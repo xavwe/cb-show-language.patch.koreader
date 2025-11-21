@@ -245,8 +245,7 @@ local function patchCoverBrowserShowLanguage(plugin)
                         fileinfo_str = self.mandatory
                     else
                         local mark = book_info.has_annotations and "\u{2592}  " or "" -- "medium shade"
-                        local lang_str = bookinfo.language or "" -- the actual patch
-                        fileinfo_str = mark .. BD.wrap(filetype) .. "  " .. lang_str .. "  " .. BD.wrap(self.mandatory) -- the actual patch
+                        fileinfo_str = mark .. BD.wrap(filetype) .. "  " .. (bookinfo.language or "") .. "  " .. BD.wrap(self.mandatory) -- actual patch
                     end
                     -- right widget, second line
                     local pages_str = ""
