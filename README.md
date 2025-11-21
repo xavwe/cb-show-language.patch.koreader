@@ -1,0 +1,1 @@
+# cb-show-language.patch.koreader
